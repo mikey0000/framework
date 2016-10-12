@@ -597,6 +597,17 @@ class MySqlGrammar extends Grammar
     }
 
     /**
+     * Create the column definition for a point type.
+     *
+     * @param  \Illuminate\Support\Fluent  $column
+     * @return string
+     */
+    protected function typePoint(Fluent $column)
+    {
+        return 'point';
+    }
+
+    /**
      * Create the column definition for a uuid type.
      *
      * @param  \Illuminate\Support\Fluent  $column
